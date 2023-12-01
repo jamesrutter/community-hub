@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.3.1",
     "@astrojs/markdoc": "^0.7.2",
     "@astrojs/tailwind": "^5.0.2",
+    "@xata.io/client": "^0.28.0",
     "astro": "^3.6.4",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.3.2"
