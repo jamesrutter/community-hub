@@ -6,7 +6,20 @@ import type {
   XataRecord,
 } from "@xata.io/client";
 
-const tables = [{ name: "users", columns: [] }] as const;
+const tables = [
+  { name: "users", columns: [] },
+  {
+    name: "posts",
+    columns: [
+      { name: "title", type: "string" },
+      { name: "content", type: "text" },
+    ],
+  },
+  { name: "organizations", columns: [] },
+  { name: "events", columns: [] },
+  { name: "locations", columns: [] },
+  { name: "categories", columns: [] },
+] as const;
 
 export type SchemaTables = typeof tables;
 export type InferredTypes = SchemaInference<SchemaTables>;
@@ -14,8 +27,28 @@ export type InferredTypes = SchemaInference<SchemaTables>;
 export type Users = InferredTypes["users"];
 export type UsersRecord = Users & XataRecord;
 
+export type Posts = InferredTypes["posts"];
+export type PostsRecord = Posts & XataRecord;
+
+export type Organizations = InferredTypes["organizations"];
+export type OrganizationsRecord = Organizations & XataRecord;
+
+export type Events = InferredTypes["events"];
+export type EventsRecord = Events & XataRecord;
+
+export type Locations = InferredTypes["locations"];
+export type LocationsRecord = Locations & XataRecord;
+
+export type Categories = InferredTypes["categories"];
+export type CategoriesRecord = Categories & XataRecord;
+
 export type DatabaseSchema = {
   users: UsersRecord;
+  posts: PostsRecord;
+  organizations: OrganizationsRecord;
+  events: EventsRecord;
+  locations: LocationsRecord;
+  categories: CategoriesRecord;
 };
 
 const DatabaseClient = buildClient();

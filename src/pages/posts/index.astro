@@ -1,0 +1,26 @@
+---
+import { XataClient } from '../../xata';
+
+const xata = new XataClient({
+  apiKey: import.meta.env.XATA_API_KEY,
+  branch: import.meta.env.XATA_BRANCH,
+});
+
+const { records } = await xata.db.posts.getPaginated({
+  pagination: {
+    size: 50,
+  },
+});
+---
+
+<div>
+  {
+    records.map((post) => (
+      <div>
+        <h2>{post.title}</h2>
+        <p>{post.content}</p>
+      </div>
+    ))
+  }
+</div>
+ ```
