@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllfl53eu313fhe36b9g",
+  "parentID": "mig_cllfl31jg8te41bea1mg",
+  "checksum": "1:878451ec735dc3960fd05224f3d5dbd9681cad50be9aab87f1a3a60323371434",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "capacity",
+          "type": "int"
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

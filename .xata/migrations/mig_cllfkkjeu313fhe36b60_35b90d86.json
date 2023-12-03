@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllfkkjeu313fhe36b60",
+  "parentID": "mig_cllfke3eu313fhe36b40",
+  "checksum": "1:35b90d86a000edcab5e948ba4f588033df5903ec22bc063aaf3fa16bceb06933",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "fee",
+          "type": "float"
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

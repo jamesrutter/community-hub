@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllfkrjeu313fhe36b8g",
+  "parentID": "mig_cllfkkjeu313fhe36b60",
+  "checksum": "1:3e1c3fa1e483d697f5eb69cc0f31d8af6fe0790f3915ef94f772650bf08c6c2e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "image",
+          "type": "file"
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllfl31jg8te41bea1mg",
+  "parentID": "mig_cllfkrjeu313fhe36b8g",
+  "checksum": "1:d950b55a77d2ad04aa63685905503cda26f6f48122f48b12e0ed087ea0981113",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "registration",
+          "type": "string"
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

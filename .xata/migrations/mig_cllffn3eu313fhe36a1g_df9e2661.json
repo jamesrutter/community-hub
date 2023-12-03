@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllffn3eu313fhe36a1g",
+  "parentID": "mig_cllffi9jg8te41bea0kg",
+  "checksum": "1:df9e266175d9b48725d2055c115ab81b31e63d147c71f3e0867fbb7a41cecc6d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "user",
+          "type": "link",
+          "link": {
+            "table": "users"
+          }
+        },
+        "table": "opportunities"
+      }
+    }
+  ]
+}

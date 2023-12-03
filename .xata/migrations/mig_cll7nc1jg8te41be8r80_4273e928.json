@@ -1,0 +1,13 @@
+{
+  "id": "mig_cll7nc1jg8te41be8r80",
+  "parentID": "mig_cll7n59jg8te41be8r70",
+  "checksum": "1:4273e9282da5f9505bf5a80e1e97f2b21bf0f3cdca67c59901a4d74af51bf80e",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "restaurants",
+        "oldName": "restaurant"
+      }
+    }
+  ]
+}

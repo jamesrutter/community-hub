@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllf1ljeu313fhe3686g",
+  "parentID": "mig_cllf163eu313fhe3685g",
+  "checksum": "1:85536e877e2c5c369c84ca31e19c160555b9d13843e55fea430e80c7708144a1",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "hours",
+          "type": "json"
+        },
+        "table": "organizations"
+      }
+    }
+  ]
+}

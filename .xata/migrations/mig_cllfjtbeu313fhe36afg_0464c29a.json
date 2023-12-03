@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllfjtbeu313fhe36afg",
+  "parentID": "mig_cllfjridgbq7spn5a140",
+  "checksum": "1:0464c29a092008c96e87048583d1fd61d2ab77935097a515179ca50ddd82a498",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "title",
+          "type": "string"
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

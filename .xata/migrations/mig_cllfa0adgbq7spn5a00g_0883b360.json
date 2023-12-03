@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllfa0adgbq7spn5a00g",
+  "parentID": "mig_cllf9p1jg8te41bea01g",
+  "checksum": "1:0883b3606ed97c98be854594c9b044fac3da2c31c924164f2736bfd3497f065f",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "organization",
+          "type": "link",
+          "link": {
+            "table": "organizations"
+          }
+        },
+        "table": "event-organization"
+      }
+    }
+  ]
+}

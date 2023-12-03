@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllfk5reu313fhe36ap0",
+  "parentID": "mig_cllfjvpjg8te41bea190",
+  "checksum": "1:5c31f06864a7c71d60f0c4868b7138d1c6d71e7b650b6d9a5e969824332b09f6",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "organizer",
+          "type": "link",
+          "link": {
+            "table": "users"
+          }
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllfg9beu313fhe36acg",
+  "parentID": "mig_cllfg59jg8te41bea0pg",
+  "checksum": "1:3cde047582cf91100edd27b3dbe64de06274cdb113076bae545eea130bf39080",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "location",
+          "type": "link",
+          "link": {
+            "table": "locations"
+          }
+        },
+        "table": "opportunities"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllfkareu313fhe36at0",
+  "parentID": "mig_cllfk8qdgbq7spn5a1eg",
+  "checksum": "1:27df407975671ec0dcc25c7db3a11c5baf617ffb964875538b60bb3b18618c25",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "end",
+          "type": "datetime"
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

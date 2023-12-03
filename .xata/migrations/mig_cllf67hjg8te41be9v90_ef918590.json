@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllf67hjg8te41be9v90",
+  "parentID": "mig_cllf64hjg8te41be9uu0",
+  "checksum": "1:ef91859059a50bbc34fc73b4967a5e4127f494fa24163de4f412c05bb6e8001e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "latitude",
+          "type": "float"
+        },
+        "table": "locations"
+      }
+    }
+  ]
+}

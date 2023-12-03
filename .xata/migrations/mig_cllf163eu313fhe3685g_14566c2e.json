@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllf163eu313fhe3685g",
+  "parentID": "mig_cllf13jeu313fhe3684g",
+  "checksum": "1:14566c2edbbf4cfb861eba900be62bf295966cbac58216088f9044616f83922d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "description",
+          "type": "text"
+        },
+        "table": "organizations"
+      }
+    }
+  ]
+}

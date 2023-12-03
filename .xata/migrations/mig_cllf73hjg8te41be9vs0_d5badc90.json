@@ -1,0 +1,13 @@
+{
+  "id": "mig_cllf73hjg8te41be9vs0",
+  "parentID": "mig_cllf6fadgbq7spn59vug",
+  "checksum": "1:d5badc9082727ac912681b8f7f617ba166b87aeb29f7dce351bed85c0e44c341",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "owner",
+        "table": "organizations"
+      }
+    }
+  ]
+}

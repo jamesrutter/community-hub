@@ -1,0 +1,13 @@
+{
+  "id": "mig_cllf8jidgbq7spn59vvg",
+  "parentID": "mig_cllf8d1jg8te41be9vv0",
+  "checksum": "1:c9122b750486ce608fedac73467af89ff3042c6d08f2c29b1c1325ce7c38a945",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "user-organization",
+        "oldName": "UserOrganizations"
+      }
+    }
+  ]
+}

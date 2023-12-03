@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllkaehjg8te41beac4g",
+  "parentID": "mig_cllk9qhjg8te41beac3g",
+  "checksum": "1:b41642b0d9d02584c7a8a7ef9cd501408b48c1d9c97a4d8c1cbe8bd072f2d12d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "lngLat",
+          "type": "multiple"
+        },
+        "table": "locations"
+      }
+    }
+  ]
+}

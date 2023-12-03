@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllf3rjeu313fhe368ag",
+  "parentID": "mig_cllf24reu313fhe3689g",
+  "checksum": "1:426d557a408559f6e9db796c1b48080c58e8ddb6069beadfc962b7632c5ea2b8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "owner",
+          "type": "link",
+          "link": {
+            "table": "users"
+          }
+        },
+        "table": "organizations"
+      }
+    }
+  ]
+}

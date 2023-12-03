@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllf24reu313fhe3689g",
+  "parentID": "mig_cllf1tjeu313fhe3688g",
+  "checksum": "1:6dfd4b4dcaee1a354cca63b4bb32787eb1f31ac51f978654985f02c3ac257dc6",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "images",
+          "type": "file[]"
+        },
+        "table": "organizations"
+      }
+    }
+  ]
+}

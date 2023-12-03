@@ -1,0 +1,16 @@
+{
+  "id": "mig_cll7os1jg8te41be8r90",
+  "parentID": "mig_cll7ombeu313fhe357h0",
+  "checksum": "1:6e2321be1c639196a0dc8a4e9683c684067e7ef43d03bbd3f83d5626fe4045ff",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "website",
+          "type": "string"
+        },
+        "table": "restaurants"
+      }
+    }
+  ]
+}

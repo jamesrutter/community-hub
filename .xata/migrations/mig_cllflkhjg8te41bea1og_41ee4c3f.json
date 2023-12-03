@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllflkhjg8te41bea1og",
+  "parentID": "mig_cllflghjg8te41bea1ng",
+  "checksum": "1:41ee4c3f02faf76de3383e530b4e7dedc2a62fc1f4ef3297b429b1ad96e86f88",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "category",
+          "type": "link",
+          "link": {
+            "table": "categories"
+          }
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

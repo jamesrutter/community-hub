@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllf513eu313fhe368bg",
+  "parentID": "mig_cllf4k9jg8te41be9u10",
+  "checksum": "1:67831496e3352381ff66f4eb8da29a15e687a8ed1076e9c66205c08ed94788f0",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "related_event",
+          "type": "link",
+          "link": {
+            "table": "events"
+          }
+        },
+        "table": "posts"
+      }
+    }
+  ]
+}

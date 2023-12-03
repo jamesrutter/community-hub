@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllev6beu313fhe36770",
+  "parentID": "mig_cllev3beu313fhe36720",
+  "checksum": "1:7bc32f7101d043ca18e6d142bca346dab284408025b95f1591ce3a0cae52959e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "bio",
+          "type": "string"
+        },
+        "table": "users"
+      }
+    }
+  ]
+}

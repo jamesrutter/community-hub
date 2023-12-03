@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllf1rjeu313fhe3687g",
+  "parentID": "mig_cllf1ljeu313fhe3686g",
+  "checksum": "1:63b361ab68529084b78c7d4e6a96cc5d3ddf53a7fd61d8f96da3e75074cd7d11",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "email",
+          "type": "email"
+        },
+        "table": "organizations"
+      }
+    }
+  ]
+}

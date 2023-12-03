@@ -7,18 +7,155 @@ import type {
 } from "@xata.io/client";
 
 const tables = [
-  { name: "users", columns: [] },
+  {
+    name: "users",
+    columns: [
+      { name: "role", type: "string", defaultValue: "member" },
+      { name: "first_name", type: "string" },
+      { name: "last_name", type: "string" },
+      { name: "email", type: "string" },
+      { name: "phone", type: "string" },
+      { name: "bio", type: "string" },
+    ],
+    revLinks: [
+      { column: "organizer", table: "events" },
+      { column: "author", table: "posts" },
+      { column: "user", table: "user-organization" },
+      { column: "user", table: "opportunities" },
+      { column: "organizer", table: "programs" },
+    ],
+  },
   {
     name: "posts",
     columns: [
       { name: "title", type: "string" },
       { name: "content", type: "text" },
+      { name: "author", type: "link", link: { table: "users" } },
+      { name: "related_event", type: "link", link: { table: "events" } },
+      { name: "related_organization", type: "link", link: { table: "posts" } },
+      { name: "category", type: "link", link: { table: "categories" } },
+      { name: "tags", type: "multiple" },
+    ],
+    revLinks: [{ column: "related_organization", table: "posts" }],
+  },
+  {
+    name: "organizations",
+    columns: [
+      { name: "name", type: "string" },
+      { name: "description", type: "text" },
+      { name: "hours", type: "json" },
+      { name: "email", type: "email" },
+      { name: "phone", type: "string" },
+      { name: "images", type: "file[]" },
+      { name: "location", type: "link", link: { table: "locations" } },
+    ],
+    revLinks: [
+      { column: "organization", table: "user-organization" },
+      { column: "organization", table: "event-organization" },
+      { column: "organization", table: "opportunities" },
     ],
   },
-  { name: "organizations", columns: [] },
-  { name: "events", columns: [] },
-  { name: "locations", columns: [] },
-  { name: "categories", columns: [] },
+  {
+    name: "events",
+    columns: [
+      { name: "title", type: "string" },
+      { name: "description", type: "text" },
+      { name: "type", type: "string" },
+      { name: "organizer", type: "link", link: { table: "users" } },
+      { name: "category", type: "link", link: { table: "categories" } },
+      { name: "images", type: "file[]" },
+    ],
+    revLinks: [
+      { column: "related_event", table: "posts" },
+      { column: "event", table: "event-organization" },
+    ],
+  },
+  {
+    name: "locations",
+    columns: [
+      { name: "address", type: "string" },
+      { name: "latitude", type: "float" },
+      { name: "longitude", type: "float" },
+      { name: "description", type: "text" },
+      { name: "lngLat", type: "multiple" },
+    ],
+    revLinks: [
+      { column: "location", table: "opportunities" },
+      { column: "location", table: "programs" },
+      { column: "location", table: "organizations" },
+    ],
+  },
+  {
+    name: "categories",
+    columns: [
+      { name: "name", type: "string" },
+      { name: "description", type: "text" },
+    ],
+    revLinks: [
+      { column: "category", table: "events" },
+      { column: "category", table: "posts" },
+      { column: "category", table: "programs" },
+    ],
+  },
+  {
+    name: "restaurants",
+    columns: [
+      { name: "name", type: "string" },
+      { name: "website", type: "string" },
+      { name: "hours", type: "string" },
+      { name: "location", type: "string" },
+    ],
+  },
+  {
+    name: "user-organization",
+    columns: [
+      { name: "user", type: "link", link: { table: "users" } },
+      { name: "organization", type: "link", link: { table: "organizations" } },
+      { name: "role", type: "string" },
+    ],
+  },
+  {
+    name: "event-organization",
+    columns: [
+      { name: "event", type: "link", link: { table: "events" } },
+      { name: "organization", type: "link", link: { table: "organizations" } },
+    ],
+  },
+  {
+    name: "opportunities",
+    columns: [
+      { name: "title", type: "string" },
+      { name: "description", type: "text" },
+      { name: "type", type: "string" },
+      { name: "organization", type: "link", link: { table: "organizations" } },
+      { name: "user", type: "link", link: { table: "users" } },
+      { name: "start", type: "datetime" },
+      { name: "end", type: "datetime" },
+      { name: "active", type: "bool", notNull: true, defaultValue: "true" },
+      { name: "location", type: "link", link: { table: "locations" } },
+      { name: "requirements", type: "multiple" },
+      { name: "contact", type: "email" },
+      { name: "status", type: "string" },
+    ],
+  },
+  {
+    name: "programs",
+    columns: [
+      { name: "title", type: "string" },
+      { name: "description", type: "text" },
+      { name: "type", type: "string" },
+      { name: "organizer", type: "link", link: { table: "users" } },
+      { name: "start", type: "datetime" },
+      { name: "end", type: "datetime" },
+      { name: "location", type: "link", link: { table: "locations" } },
+      { name: "fee", type: "float" },
+      { name: "image", type: "file" },
+      { name: "registration", type: "string" },
+      { name: "capacity", type: "int" },
+      { name: "tags", type: "multiple" },
+      { name: "category", type: "link", link: { table: "categories" } },
+    ],
+  },
 ] as const;
 
 export type SchemaTables = typeof tables;
@@ -42,6 +179,21 @@ export type LocationsRecord = Locations & XataRecord;
 export type Categories = InferredTypes["categories"];
 export type CategoriesRecord = Categories & XataRecord;
 
+export type Restaurants = InferredTypes["restaurants"];
+export type RestaurantsRecord = Restaurants & XataRecord;
+
+export type UserOrganization = InferredTypes["user-organization"];
+export type UserOrganizationRecord = UserOrganization & XataRecord;
+
+export type EventOrganization = InferredTypes["event-organization"];
+export type EventOrganizationRecord = EventOrganization & XataRecord;
+
+export type Opportunities = InferredTypes["opportunities"];
+export type OpportunitiesRecord = Opportunities & XataRecord;
+
+export type Programs = InferredTypes["programs"];
+export type ProgramsRecord = Programs & XataRecord;
+
 export type DatabaseSchema = {
   users: UsersRecord;
   posts: PostsRecord;
@@ -49,6 +201,11 @@ export type DatabaseSchema = {
   events: EventsRecord;
   locations: LocationsRecord;
   categories: CategoriesRecord;
+  restaurants: RestaurantsRecord;
+  "user-organization": UserOrganizationRecord;
+  "event-organization": EventOrganizationRecord;
+  opportunities: OpportunitiesRecord;
+  programs: ProgramsRecord;
 };
 
 const DatabaseClient = buildClient();

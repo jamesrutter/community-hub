@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllffqjeu313fhe36a2g",
+  "parentID": "mig_cllffn3eu313fhe36a1g",
+  "checksum": "1:763e4f46130565bbc3671577151c21c04ce5d14e861cd17f99eaf2aa5103ab86",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "start",
+          "type": "datetime"
+        },
+        "table": "opportunities"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllffabeu313fhe36a0g",
+  "parentID": "mig_cllff7beu313fhe369vg",
+  "checksum": "1:0e4caa199ad2728d70885cb435082fd35c7c9a85e4cb7f549af1be9cae5a581b",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "title",
+          "type": "string"
+        },
+        "table": "opportunities"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+---
+import { XataClient } from '../../xata';
+
+const xata = new XataClient({
+  apiKey: import.meta.env.XATA_API_KEY,
+  branch: import.meta.env.XATA_BRANCH,
+});
+
+const organizations = await xata.db.organizations.select(['*', 'location.*']).getMany();
+---
+
+<div>
+  {
+    organizations.map((org) => (
+      <div>
+        <h2>{org.name}</h2>
+        <p>{org.description}</p>
+        <h3>Address: {org.location?.address}</h3>
+        <h3>GPS Coordinates: {org.location?.lngLat}</h3>
+        <h3>
+          GPS Coordinates: {org.location?.longitude}, {org.location?.latitude}
+        </h3>
+      </div>
+    ))
+  }
+</div>

@@ -1,0 +1,12 @@
+{
+  "id": "mig_cllf9lhjg8te41bea00g",
+  "parentID": "mig_cllf8jidgbq7spn59vvg",
+  "checksum": "1:c0a3cc79a2de0ad349b630bc679a783bb53cafc1f2869a5ecebf34f09a405380",
+  "operations": [
+    {
+      "addTable": {
+        "table": "event-organization"
+      }
+    }
+  ]
+}

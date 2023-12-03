@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllf8d1jg8te41be9vv0",
+  "parentID": "mig_cllf869jg8te41be9vu0",
+  "checksum": "1:ed8745a05aa85692a7ba0370b7107196677e120db5788501cb3797ac98eaa3e9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "role",
+          "type": "string"
+        },
+        "table": "UserOrganizations"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllffi9jg8te41bea0kg",
+  "parentID": "mig_cllffehjg8te41bea0jg",
+  "checksum": "1:10ccdae725f0a3389142e0c57b02d1d41f078da1dc032b2af7c4b0820e5c4962",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "organization",
+          "type": "link",
+          "link": {
+            "table": "organizations"
+          }
+        },
+        "table": "opportunities"
+      }
+    }
+  ]
+}

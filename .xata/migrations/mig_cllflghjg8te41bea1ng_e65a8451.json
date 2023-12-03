@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllflghjg8te41bea1ng",
+  "parentID": "mig_cllfl53eu313fhe36b9g",
+  "checksum": "1:e65a8451f429744e7a26e4145231b8d85ea6170021d793506262c6d9e2fecea9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "tags",
+          "type": "multiple"
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

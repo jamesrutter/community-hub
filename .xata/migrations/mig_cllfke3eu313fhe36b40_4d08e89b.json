@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllfke3eu313fhe36b40",
+  "parentID": "mig_cllfkareu313fhe36at0",
+  "checksum": "1:4d08e89b893aba1f730afcd9c5fd3b1eb9c90dc20401f63a9228b19333e49dd8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "location",
+          "type": "link",
+          "link": {
+            "table": "locations"
+          }
+        },
+        "table": "programs"
+      }
+    }
+  ]
+}

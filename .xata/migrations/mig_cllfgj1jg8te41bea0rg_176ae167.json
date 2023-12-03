@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllfgj1jg8te41bea0rg",
+  "parentID": "mig_cllfgeidgbq7spn5a0t0",
+  "checksum": "1:176ae1670be2c4112a8f68eb99da48bf91cd2272def0a40c5bfeecf764ac17ec",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "status",
+          "type": "string"
+        },
+        "table": "opportunities"
+      }
+    }
+  ]
+}

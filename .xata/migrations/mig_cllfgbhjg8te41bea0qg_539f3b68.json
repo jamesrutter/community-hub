@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllfgbhjg8te41bea0qg",
+  "parentID": "mig_cllfg9beu313fhe36acg",
+  "checksum": "1:539f3b68ce40f282d4cd990aec908e3541c768fb029fe00cad30179d7d7666c6",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "requirements",
+          "type": "multiple"
+        },
+        "table": "opportunities"
+      }
+    }
+  ]
+}

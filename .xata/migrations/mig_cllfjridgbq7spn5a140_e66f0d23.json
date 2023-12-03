@@ -1,0 +1,12 @@
+{
+  "id": "mig_cllfjridgbq7spn5a140",
+  "parentID": "mig_cllfgj1jg8te41bea0rg",
+  "checksum": "1:e66f0d23200c40f6a50c17e1652906424a887f062d7d1c2755ca9a3bf52d2263",
+  "operations": [
+    {
+      "addTable": {
+        "table": "programs"
+      }
+    }
+  ]
+}

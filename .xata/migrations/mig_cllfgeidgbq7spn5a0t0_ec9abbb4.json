@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllfgeidgbq7spn5a0t0",
+  "parentID": "mig_cllfgbhjg8te41bea0qg",
+  "checksum": "1:ec9abbb422a27d6d3c37c05ac48fb1f78ca2adfc2eba25841afba24bcf54aaf5",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "contact",
+          "type": "email"
+        },
+        "table": "opportunities"
+      }
+    }
+  ]
+}

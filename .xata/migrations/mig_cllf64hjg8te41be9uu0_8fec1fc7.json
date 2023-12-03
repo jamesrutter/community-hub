@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllf64hjg8te41be9uu0",
+  "parentID": "mig_cllf5u3eu313fhe368r0",
+  "checksum": "1:8fec1fc7233cb01d50d9a51530239cee0b7b39b507fd1036f9f209ad4347065e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "address",
+          "type": "string"
+        },
+        "table": "locations"
+      }
+    }
+  ]
+}

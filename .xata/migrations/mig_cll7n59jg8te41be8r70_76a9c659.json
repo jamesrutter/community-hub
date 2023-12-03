@@ -1,0 +1,12 @@
+{
+  "id": "mig_cll7n59jg8te41be8r70",
+  "parentID": "mig_clkr46reu313fhe33l6g",
+  "checksum": "1:76a9c659ba84d4cc29bf02c6a3a3c8f79c3ab4d39dace0a5d08fd5e30f3f475c",
+  "operations": [
+    {
+      "addTable": {
+        "table": "restaurant"
+      }
+    }
+  ]
+}

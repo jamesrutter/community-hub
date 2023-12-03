@@ -1,0 +1,19 @@
+{
+  "id": "mig_cllf573eu313fhe368cg",
+  "parentID": "mig_cllf513eu313fhe368bg",
+  "checksum": "1:bda2d35f147304d9f588d1a713c29e5075c913078766e8764c0e2af7e995795d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "related_organization",
+          "type": "link",
+          "link": {
+            "table": "posts"
+          }
+        },
+        "table": "posts"
+      }
+    }
+  ]
+}

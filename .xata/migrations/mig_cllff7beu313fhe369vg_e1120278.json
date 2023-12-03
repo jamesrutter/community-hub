@@ -1,0 +1,12 @@
+{
+  "id": "mig_cllff7beu313fhe369vg",
+  "parentID": "mig_cllfa0adgbq7spn5a00g",
+  "checksum": "1:e112027813ca457b443a6b8630bdc3f8dfbeab9e3fb7389f52af26849d64ce4f",
+  "operations": [
+    {
+      "addTable": {
+        "table": "opportunities"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllev3beu313fhe36720",
+  "parentID": "mig_cllev19jg8te41be9tng",
+  "checksum": "1:2deef60ce50979966f34f95f8b8b4660f36c4fc10133b531d8854c6e9a5c4ac2",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "phone",
+          "type": "string"
+        },
+        "table": "users"
+      }
+    }
+  ]
+}

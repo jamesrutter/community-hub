@@ -1,0 +1,16 @@
+{
+  "id": "mig_cllf69reu313fhe36930",
+  "parentID": "mig_cllf67hjg8te41be9v90",
+  "checksum": "1:41d9ccb3c47ce8b7c1a65977016658eb38f0268c2e0b1a37b378b9825a7aefa2",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "longitude",
+          "type": "float"
+        },
+        "table": "locations"
+      }
+    }
+  ]
+}
