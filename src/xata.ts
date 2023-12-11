@@ -48,6 +48,7 @@ const tables = [
       { name: "phone", type: "string" },
       { name: "images", type: "file[]" },
       { name: "location", type: "link", link: { table: "locations" } },
+      { name: "website", type: "string" },
     ],
     revLinks: [
       { column: "organization", table: "user-organization" },
@@ -74,10 +75,10 @@ const tables = [
     name: "locations",
     columns: [
       { name: "address", type: "string" },
-      { name: "latitude", type: "float" },
-      { name: "longitude", type: "float" },
+      { name: "lat", type: "float" },
+      { name: "lng", type: "float" },
       { name: "description", type: "text" },
-      { name: "lngLat", type: "multiple" },
+      { name: "latLng", type: "json" },
     ],
     revLinks: [
       { column: "location", table: "opportunities" },

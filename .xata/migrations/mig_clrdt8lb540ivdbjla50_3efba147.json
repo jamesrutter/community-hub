@@ -1,0 +1,14 @@
+{
+  "id": "mig_clrdt8lb540ivdbjla50",
+  "parentID": "mig_clrdnov219e1p7sjclqg",
+  "checksum": "1:3efba14743451c4e9bbe4d456fb8acd0888d4825f7289bf2c27fad14a7ebf971",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "latLng",
+        "oldName": "lngLat",
+        "table": "locations"
+      }
+    }
+  ]
+}

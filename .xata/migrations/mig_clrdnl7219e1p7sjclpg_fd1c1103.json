@@ -1,0 +1,13 @@
+{
+  "id": "mig_clrdnl7219e1p7sjclpg",
+  "parentID": "mig_clrdnh7219e1p7sjclog",
+  "checksum": "1:fd1c110355a52573bd64ea1125bfb9e49f866a0bb887c0a8b7399c10d7a7b7a4",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "lngLat",
+        "table": "locations"
+      }
+    }
+  ]
+}

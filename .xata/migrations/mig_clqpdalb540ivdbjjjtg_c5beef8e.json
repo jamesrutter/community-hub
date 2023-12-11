@@ -1,0 +1,16 @@
+{
+  "id": "mig_clqpdalb540ivdbjjjtg",
+  "parentID": "mig_cllkaehjg8te41beac4g",
+  "checksum": "1:c5beef8ee5341dbd6b309f32ed4d37f38fd467b184eeb4263cffd0f93dbc41ac",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "website",
+          "type": "string"
+        },
+        "table": "organizations"
+      }
+    }
+  ]
+}
