@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@types/google.maps": "^3.54.10",
-    "@types/mapbox-gl": "^2.7.19"
+    "@types/mapbox-gl": "^2.7.19",
+    "daisyui": "^4.4.19"
   }
 }
