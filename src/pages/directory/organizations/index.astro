@@ -1,6 +1,7 @@
 ---
-import { XataClient } from '../../xata';
-
+import { XataClient } from '../../../xata';
+import Base from '../../../layouts/base.astro';
+import Organization from '../../../components/organization/organization-list.astro';
 const xata = new XataClient({
   apiKey: import.meta.env.XATA_API_KEY,
   branch: import.meta.env.XATA_BRANCH,
@@ -9,18 +10,8 @@ const xata = new XataClient({
 const organizations = await xata.db.organizations.select(['*', 'location.*']).getMany();
 ---
 
-<div>
-  {
-    organizations.map((org) => (
-      <div>
-        <h2>{org.name}</h2>
-        <p>{org.description}</p>
-        <h3>Address: {org.location?.address}</h3>
-        <h3>GPS Coordinates: {org.location?.lngLat}</h3>
-        <h3>
-          GPS Coordinates: {org.location?.longitude}, {org.location?.latitude}
-        </h3>
-      </div>
-    ))
-  }
-</div>
+<Base>
+  <div class='flex space-x-2 mt-2'>
+    {organizations.map((org) => <Organization organization={org} />)}
+  </div>
+</Base>

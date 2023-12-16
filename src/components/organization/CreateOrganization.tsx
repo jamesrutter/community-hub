@@ -1,7 +1,7 @@
 import { useForm, Controller, type Resolver, type SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { type Organizations } from '../xata';
-import { organizationSchema } from '../schema';
+import { type Organizations } from '../../xata';
+import { organizationSchema } from '../../schema';
 
 export default function CreateOrganization() {
   const {

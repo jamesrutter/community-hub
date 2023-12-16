@@ -1,0 +1,17 @@
+---
+import { type OrganizationsRecord } from '../../xata';
+interface Props {
+  organization: OrganizationsRecord;
+}
+const { organization } = Astro.props;
+---
+
+<div class='card w-96 bg-base-100 shadow-xl'>
+  <div class='card-body'>
+    <h2 class='card-title'>{organization.name}</h2>
+    <p>{organization.description}</p>
+    <div class='card-actions justify-end'>
+      <button class='btn btn-primary'>{organization.email}</button>
+    </div>
+  </div>
+</div>
